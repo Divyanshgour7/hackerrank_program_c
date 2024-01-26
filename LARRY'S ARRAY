@@ -1,0 +1,20 @@
+static char ans[100000];
+long int i=0,j=0,sum=0;
+ for(i=0;i<A_count-1;i++)
+ {
+     for(j=i+1;j<A_count;j++)
+     {
+          if(A[j]<A[i])
+          {
+              sum++;
+          }   
+     }
+ }
+ if(sum%2==0)
+{
+    strcpy(ans,"YES");
+}
+else {
+    strcpy(ans,"NO");
+}
+  return ans;
